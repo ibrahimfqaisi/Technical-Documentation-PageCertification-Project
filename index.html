@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>How To Write Code Documentation</header>
+        <ul>
+            <li>
+                <a class="nav-link" href="#What_Is_Code_Documentation">What Is Code Documentation</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Why_Should_You_Document_Your_Code">Why Should You Document Your Code</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#How_Do_You_Write_a_Documented_Code">How Do You Write a Documented Code</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Conclusion">Conclusion</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Page_designer">Page designer</a>
+            </li>
+
+        </ul>
+    </nav>
+
+
+    <main id="main-doc">
+        <section id="What_Is_Code_Documentation" class="main-section">
+            <header>What Is Code Documentation</header>
+            <article>
+                <p> Code documentation is the process through which software programmers document their code. It is a
+                    combination
+                    of clear pictures and textual explanations that describe what a codebase does and how it may be
+                    used. It
+                    enhances code readability, reproducibility, and usability.</p>
+                <P> Code documentation can take the form of straightforward explanations of code functions and blocks, a
+                    comprehensive developer handbook that includes dos and don'ts, summaries of every aspect of the
+                    application,
+                    illustrative images such as sequence and entity relationship diagrams, writing API documentation,
+                    describing
+                    each class, method, argument and return value, and even a ReadME file. </P>
+
+            </article>
+        </section>
+        <section id="Why_Should_You_Document_Your_Code" class="main-section">
+            <header>Why Should You Document Your Code</header>
+            <article>
+                <p>Why should your code be documented? What advantages does code documentation offer you? Why do you
+                    still need
+                    to describe your preferences and how you implemented the code when coding is difficult enough? </p>
+                <p>Three factors should motivate you towards documenting code:</p>
+                <h4>New Skills</h4>
+                <p>All parties participating in the SDLC interact and communicate using technical documentation as the
+                    channel. Since you are not the only person working on the SDLC, you must communicate with both
+                    technical and non-technical audiences. Therefore, it is crucial to be able to communicate with other
+                    software developers both inside and outside of your organization, as well as with other SDLC
+                    stakeholders, as you serve as the backbone of the process. By adding this flair of communication to
+                    your code, documentation can help you improve your technical communication abilities and, in turn,
+                    increase your employability.</p>
+                <h4>Documentation Increases the Usability of Your Code</h4>
+                <p>Code that is documented is reused. Its documentation often makes the difference between a code
+                    library being used and not. Nobody wants to make a contribution to or use an undocumented
+                    open-source project.
+
+                    Most of the time, you'd prefer to use a less powerful library with documentation. Why? Considering
+                    that a codebase's documentation has more information. The project's developers think it's worthwhile
+                    to explain how it works and why important decisions were made in straightforward language so that
+                    anyone who might be interested can easily get started. It can be quite thrilling and enjoyable to
+                    discover a brand-new, intriguing, and thoroughly described project in your preferred programming
+                    language.</p>
+            </article>
+        </section>
+        <section id="How_Do_You_Write_a_Documented_Code" class="main-section">
+            <header>How Do You Write a Documented Code</header>
+            <article>
+                <p>These fundamental guidelines will help you produce meaningful and, most importantly, accessible code
+                    documentation. </p>
+                <h4>Write Clean Code </h4>
+                <p>As apparent as it may seem, developing effective, clean code must come before writing any
+                    documentation. It is impossible to document ambiguous, improperly formatted code without a well
+                    defined purpose and structure. Inability to understand your code without comments may be a sign that
+                    it needs to be simplified or refactored into more manageable chunks.</p>
+                <p>Be careful to build a logical and manageable folder structure when developing production-level code,
+                    and adhere to relevant naming standards for files, variables, and functions throughout the project.
+                    Additionally, remove repetitive code. Another technique to guarantee that your code is clear and
+                    tidy is to format it according to the same standards throughout the project or code implementation.
+                <h4>Here is an example of clean code:</h4>
+                <code>  def calculate_average(numbers):
+    """
+    Calculates the average of a list of numbers.
+    """
+    if not numbers:
+        return None
+    total = sum(numbers)
+    return total / len(numbers)
+</code>
+                <h4>other example of clean code:</h4>
+                <code>// Unclear variable name
+  let x = 5;
+  
+  // Clear variable name
+  let numberOfStudents = 5;
+  </code>
+                <h4>other example of clean code:</h4>
+
+                <code>// Unclean function
+  function calculateSum(a, b, c, d) {
+    let sum = a + b + c + d;
+    return sum;
+  }
+  
+  // Clean function
+  function calculateSum(numbers) {
+    return numbers.reduce((acc, curr) => acc + curr);
+  }
+  </code>
+                <h4>other example of clean code:</h4>
+
+                <code>// Unclear code without comments
+  function calculateAverage(numbers) {
+    let sum = numbers.reduce((acc, curr) => acc + curr);
+    let average = sum / numbers.length;
+    return average;
+  }
+  
+  // Clean code with comments
+  function calculateAverage(numbers) {
+    // Calculate the sum of all numbers
+    let sum = numbers.reduce((acc, curr) => acc + curr);
+  
+    // Calculate the average of all numbers
+    let average = sum / numbers.length;
+  
+    return average;
+  }
+  </code>
+                <h4>other example of clean code:</h4>
+
+                <code>// Unclean code with hardcoded values
+  function calculateCircleArea(radius) {
+    let pi = 3.14;
+    let area = pi * radius * radius;
+    return area;
+  }
+  
+  // Clean code with constants
+  const PI = 3.14;
+  
+  function calculateCircleArea(radius) {
+    let area = PI * radius * radius;
+    return area;
+  }
+  
+  </code>
+                <h4>other points to consider when writing clean code: </h4>
+                <ul>
+                    <li>Select the Right Tools</li>
+                    <li>Document As You Write </li>
+                    <li>Structure Your Comments Well </li>
+                    <li>Add Docstrings
+                    </li>
+                    <li>Avoid hardcoding values and use constants instead:</li>
+                </ul>
+                </p>
+            </article>
+        </section>
+        <section id="Conclusion" class="main-section">
+            <header>Conclusion</header>
+            <article>
+                <p>The advantages of having excellent code documentation are both individual and collective; in addition
+                    to facilitating developer collaboration, it also helps you improve your technical writing and
+                    documentation skills.</p>
+                <p>Some coding concepts, such as the Don't Repeat Yourself rule, also apply to writing code
+                    documentation because duplication is detested even in code documentation. In addition to
+                    well-formatted docstrings and regular updates to your readme file, excellent code documentation also
+                    involves a number of best practices covered in this blog.</p>
+            </article>
+        </section>
+        <section id="Page_designer" class="main-section">
+            <header>Page designer</header>
+            <article>
+                <code>ibrahim adnan</code>
+            </article>
+        </section>
+
+
+    </main>
+</body>
+
+</html>
